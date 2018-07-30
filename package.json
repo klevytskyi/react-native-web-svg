@@ -2,17 +2,22 @@
   "name": "react-native-web-svg",
   "version": "1.0.0",
   "description": "React Native for Web implementation of react-native-svg",
-  "main": "lib/index.js",
-  "author": "Kostiantyn Levytskyi <le.konstantos@gmail.com>",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "author": {
+    "name": "Kostiantyn Levytskyi",
+    "email": "levytskyi.kostiantyn@gmail.com"
+  },
   "license": "MIT",
-  "private": false,
   "scripts": {
-    "build": "babel index.js -d lib"
+    "build": "babel index.es.js -o index.cjs.js"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.55",
     "@babel/core": "^7.0.0-beta.55",
     "@babel/preset-env": "^7.0.0-beta.55"
-  }
+  },
+  "keywords": ["react-native", "react-native-web", "react-native-svg", "svg"],
+  "repository": "git@github.com:KonstantoS/react-native-web-svg.git"
 }
